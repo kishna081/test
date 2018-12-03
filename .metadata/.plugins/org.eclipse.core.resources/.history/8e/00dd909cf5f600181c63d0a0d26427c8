@@ -1,0 +1,10 @@
+
+public class Android extends Mp3player{
+	public static void main(String[] args){
+	SmartPhone Android = new SmartPhone();
+	android.play();
+	android.stop();
+	android.back();
+	android.call();
+}
+}
