@@ -1,0 +1,10 @@
+
+public class Iphone {
+	public static void main(String[] args){
+		SmartPhone iphone= new SmatrPhone();
+		iphone.play();
+		iphone.stop();
+		iphone.next();
+		iphone.back();
+	}
+}
