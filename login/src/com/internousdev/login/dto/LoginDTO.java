@@ -21,11 +21,11 @@ public class LoginDTO {
 	  this.name=name;
   }
 
-  public String setPassword(){
+  public String getPassword(){
 	  return password;
   }
 
-  public void getPassword(String password){
+  public void setPassword(String password){
 	  this.password=password;
   }
 
