@@ -3,7 +3,7 @@ package com.internousdev.webproj2.action;
 import com.internousdev.webproj2.dao.InquiryCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class InquiryompleteAction extends ActionSupport{
+public class InquiryCompleteAction extends ActionSupport{
 
 	private String name;
 	private String qtype;
