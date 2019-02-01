@@ -114,6 +114,24 @@
 <entry path="C:\eclipse\pleiades\eclipse\jre\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home" version="1.8.0_131">
+<bootpath>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/resources.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/rt.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/sunrsasign.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/jsse.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/jce.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/charsets.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/jfr.jar"/>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Applications/Eclipse_4.6.3.app/Contents/java/8/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\pleiades\eclipse\jre\jre" version="1.8.0_74">
 <bootpath>
 <entry path="C:\pleiades\eclipse\jre\jre\lib\resources.jar"/>
