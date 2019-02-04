@@ -1,24 +1,27 @@
-package com.internousdev.webproj3.util;
+package com.internousdev.webproj4.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 public class DBConnector {
+
+
 	/**
-	 * JDBCドライバー名
+	 * JDBCドライバ名
 	 */
 	private static String driverName="com.mysql.jdbc.Driver";
 
 	/**
 	 * データベース接続URL
 	 */
-	private static String url = "jdbc:mysql://localhost/testdb_kishi3__";
+	private static String url="jdbc:mysql://localhost/testdb_kishi4";
 
 	/**
 	 * データベース接続ユーザ名
 	 */
-	private static String user="root";
+	private static String user= "root";
 
 	/**
 	 * データベース接続パスワード
@@ -26,7 +29,8 @@ public class DBConnector {
 	private static String password="mysql";
 
 	public Connection getConnection(){
-		Connection con=null;
+		Connection con = null;
+
 		try{
 			Class.forName(driverName);
 			con = DriverManager.getConnection(url,user,password);
@@ -37,5 +41,4 @@ public class DBConnector {
 		}
 		return con;
 	}
-
 }

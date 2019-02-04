@@ -1,6 +1,6 @@
-drop database if exists testdb_kishi3;
-create database testdb_kishi3;
-use testdb_kishi3;
+drop database if exists testdb_kishi4;
+create database testdb_kishi4;
+use testdb_kishi4;
 
 create table users(
 user_id int primary key auto_increment,
@@ -17,3 +17,4 @@ name varchar(255),
 qtype varchar(255),
 body varchar(255)
 );
+
