@@ -6,12 +6,12 @@
 <html>
 <head>
 
-<meta charset=#UTF-8">
+<meta charset="#UTF-8">
 <title>お問い合わせフォーム</title>
 </head>
 <body>
 
-  <s:form method="post action="InquiryCompleteAction">
+  <s:form method="post" action="InquiryCompleteAction">
     名前：<input type="text" name="name"/>
     お問い合わせの種類：<br>
     <select name="qtype">

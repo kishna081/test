@@ -49,7 +49,7 @@ public void setBody(String body){
 	this.body=body;
 }
 public List<InquiryDTO> getInquiryDTOList(){
-	return InquiryDTOList;
+	return inquiryDTOList;
 }
 
 public void setInquiryDTOList(List<InquiryDTO> inquiryDTOList){
