@@ -13,19 +13,14 @@ import com.opensymphony.xwork2.ActionSupport;
 public class TestAction extends ActionSupport implements SessionAware{
 
 	private String username;
-
 	private String password;
-
 	private List<LoginDTO> loginDTOList = new ArrayList<LoginDTO>();
-
 	private Map<String, Object> session;
 
 	public String execute(){
 		String ret = ERROR;
-
 		TestDAO dao = new TestDAO();
 		int count = dao.insert(username, password);
-
 		if(count>0){
 			ret=SUCCESS;
 		}else{

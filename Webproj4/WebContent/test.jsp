@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@
 
 <s:iterator value="loginDTOList">
  <tr>
-   <td><s:property value="userame" /></td>
+   <td><s:property value="username" /></td>
    <td><s:property value="password" /></td>
  </tr>
 </s:iterator>

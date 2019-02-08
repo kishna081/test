@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE html>
 <html>
@@ -25,7 +25,8 @@
   <tr>
 
   <td><s:property value="name" /></td>
-  <s:if test='qtype="company"'>
+
+  <s:if test='qtype=="company"'>
     <td>会社について</td>
   </s:if>
 

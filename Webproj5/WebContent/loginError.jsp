@@ -6,6 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <title>LoginError</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
   <tr>
     <s:iterator value="#session.loginDTOList">
       <td><s:property value="username"/></td>
-      <td><s:propertyy valie="password"/></td>
+      <td><s:property value="password"/></td>
     </s:iterator>
   </tr>
 

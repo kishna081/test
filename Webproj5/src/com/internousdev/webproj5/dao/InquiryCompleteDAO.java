@@ -2,8 +2,8 @@ package com.internousdev.webproj5.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +22,7 @@ public class InquiryCompleteDAO {
 		String sql="select * from inquiry";
 
 		try{
-			PreparedStatement rs = con.prepareStatement(sql);
+			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
 			while(rs.next()){
@@ -46,7 +46,7 @@ public class InquiryCompleteDAO {
 
 	public int insert(String name,String qtype,String body){
 		int ret=0;
-		DBConnector db=new.DBConnector();
+		DBConnector db=new DBConnector();
 		Connection con = db.getConnection();
 
 		String sql="insert into inquiry value(?,?,?)";
@@ -68,7 +68,7 @@ public class InquiryCompleteDAO {
 		try{
 			con.close();
 			}catch(SQLException e){
-				e.printStachTrace();
+				e.printStackTrace();
 			}
 			return ret;
 	}
