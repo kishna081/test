@@ -18,7 +18,7 @@ public class TestDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-		String sql = "insert int users(user_name,password) values(?,?)";
+		String sql = "insert into users(user_name,password) values(?,?)";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -44,7 +44,7 @@ public class TestDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-		String sql = "select * from users where user_name? and password=?";
+		String sql = "select * from users where user_name=? and password=?";
 
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);

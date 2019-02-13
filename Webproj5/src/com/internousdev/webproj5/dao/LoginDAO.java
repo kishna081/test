@@ -37,7 +37,7 @@ public class LoginDAO {
 				loginDTOList.add(dto);
 			}
 
-			if(loginDTOList.size()<0){
+			if(loginDTOList.size()<=0){
 				LoginDTO dto = new LoginDTO();
 				dto.setUsername("該当なし");
 				dto.setPassword("該当なし");

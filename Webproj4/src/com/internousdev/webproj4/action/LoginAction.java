@@ -11,7 +11,7 @@ public class LoginAction extends ActionSupport{
 
 	private String username;
 	private String password;
-	private List<LoginDTO> LoginDTOList = new ArrayList<LoginDTO>();
+	private List<LoginDTO> loginDTOList = new ArrayList<LoginDTO>();
 
 	public String execute(){
 		String ret=ERROR;
@@ -19,11 +19,11 @@ public class LoginAction extends ActionSupport{
 		System.out.println(password);
 		LoginDAO dao = new LoginDAO();
 
-		LoginDTOList=dao.select(username,password);
+		loginDTOList=dao.select(username,password);
 
-		if(this.username.equals(LoginDTOList.get(0).getUsername())
+		if(this.username.equals(loginDTOList.get(0).getUsername())
 				&&
-		this.password.equals(LoginDTOList.get(0).getPassword())){
+		this.password.equals(loginDTOList.get(0).getPassword())){
 
 			ret=SUCCESS;
 		}else{
@@ -49,10 +49,10 @@ public class LoginAction extends ActionSupport{
 	}
 
 	public List<LoginDTO> getLoginDTOList(){
-		return LoginDTOList;
+		return loginDTOList;
 	}
 
 	public void setLoginDTOList(List<LoginDTO> loginDTOList){
-		LoginDTOList = loginDTOList;
+		this.loginDTOList = loginDTOList;
 	}
 }

@@ -59,7 +59,9 @@ height:80px;
 background-color:black;
 cler:both;
 }
+
 </style>
+
 </head>
 <body>
   <div id="header">
@@ -71,7 +73,6 @@ cler:both;
     <div id="top">
         <p>Login</p>
     </div>
-  </div>
 
   <div>
   <h3>商品を購入する際にはログインをお願いします。</h3>
@@ -80,7 +81,7 @@ cler:both;
     <s:password name="loginPassword"/>
     <s:submit value="ログイン"/>
   </s:form>
-  <br>
+  <br/>
 
   <div>
     <span>新規ログイン登録は
@@ -88,10 +89,12 @@ cler:both;
       </span>
       </div>
   </div>
+</div>
 
   <div id="footer">
      <div id="pr">
      </div>
   </div>
+
 </body>
 </html>

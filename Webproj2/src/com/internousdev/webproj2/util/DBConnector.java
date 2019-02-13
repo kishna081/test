@@ -15,7 +15,7 @@ public class DBConnector {
    * データベース接続URL
    */
 
-	private static String url="jdbc:mysql://localhost/testdb_kishi2";
+	private static String url="jdbc:mysql://localhost/testdb_kishi22";
 
   /**
    * データベース接続ユーザー名

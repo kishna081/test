@@ -46,10 +46,17 @@ background-color:black;
 
 #main{
 width:100%;
-height:80px
-background-color:black;
-crear:both;
+height:500px;
+text-align:center;
 }
+
+#footer{
+width:100%;
+height:80px;
+background-color:black;
+clear:both;
+}
+
 </style>
 
 </head>
@@ -62,13 +69,14 @@ crear:both;
 
  <div id="main">
     <div id="top">
+      <p>Home</p>
     </div>
- </div>
 
  <div>
     <s:form action="HomeAction">
       <s:submit value="商品購入" />
     </s:form>
+ </div>
  </div>
 
 <div id="footer">

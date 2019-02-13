@@ -8,11 +8,11 @@ public class LoginDTO {
 	private boolean loginFlg=false;
 
 
-	public String getLoginID(){
+	public String getLoginId(){
 		return loginId;
 	}
 
-	public void setLoginID(String loginId){
+	public void setLoginId(String loginId){
 		this.loginId = loginId;
 	}
 

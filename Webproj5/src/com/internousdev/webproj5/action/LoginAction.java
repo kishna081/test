@@ -26,15 +26,11 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 		loginDTOList = dao.select(username, password);
 
-		loginDTOList = dao.select(username,password);
 		if(this.username.equals(loginDTOList.get(0).getUsername())
 				&&
 				this.password.equals(loginDTOList.get(0).getPassword())){
-			session.put("loginDTOList.get(0)",loginDTOList);
+			session.put("loginDTOList",loginDTOList);
 			ret=SUCCESS;
-
-
-		ret=SUCCESS;
 	}else{
 		session.put("loginDTOList",loginDTOList);
 		ret=ERROR;
@@ -58,7 +54,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		this.password=password;
 	}
 
-	public Map<String, Object> getSesseion(){
+	public Map<String, Object> getSession(){
 		return session;
 	}
 
