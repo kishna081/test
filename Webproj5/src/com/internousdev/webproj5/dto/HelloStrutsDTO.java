@@ -30,7 +30,7 @@ public class HelloStrutsDTO {
 		this.password=password;
 	}
 
-	public String getResut(){
+	public String getResult(){
 		return result;
 	}
 

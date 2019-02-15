@@ -3,6 +3,7 @@
 <%@taglib prefix="s" uri="/struts-tags" %>
 
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,10 +13,10 @@
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 
-<title>UserCreateConfirm画面</title>
+<title>BuyItemConfirm画面</title>
+
 <style type="text/css">
 
-/*===TAG LAYOUT===*/
 body{
 margin:0;
 padding:0;
@@ -29,7 +30,7 @@ background:#fff;
 
 table{
 text-align:center;
-marin:0 auto;
+margin:0 auto;
 }
 
 /*===ID LAYOUT===*/
@@ -57,6 +58,7 @@ height:80px;
 background-color:black;
 clear:both;
 }
+
 </style>
 </head>
 <body>
@@ -68,55 +70,50 @@ clear:both;
 
   <div id="main">
     <div id="top">
-      <p>UserCreateConfirm</p>
+      <p>BuyItemConfirm</p>
     </div>
 
-  <div>
-   <h3>登録する内容は以下でよろしいですか。</h3>
-   <table>
-     <s:form action="UserCreateCompleteAction">
-      <tr id="box">
-       <td>
-          <label>ログインID:</label>
-       </td>
-       <td>
-         <s:property value="loginUserId" escape="false"/>
-       </td>
-     </tr>
+    <div>
 
-     <tr id="box">
-       <td>
-         <label>ログインPASSWORD:</label>
-       </td>
-       <td>
-         <s:property value="loginPassword" escape="false"/>
-       </td>
-     </tr>
+      <s:form action="BuyItemConfirmAction">
+      <table>
+        <tr>
+           <td>商品名</td>
+           <td><s:property value="session.buyitem_name"/></td>
+        </tr>
 
-     <tr id="box">
-       <td>
-         <label>ユーザー名:</label>
-       </td>
-       <td>
-         <s:property value="userName" escape="false"/>
-       </td>
-     </tr>
+        <tr>
+          <td>値段</td>
+          <td>
+            <s:property value="session.buyItem_price"/>
+              <span>円</span>
+            </td>
+        </tr>
 
-     <tr>
-       <td>
-         <s:submit value="完了"/>
-       </td>
-     </tr>
-   </s:form>
-   </table>
-   </div>
-  </div>
+        <tr>
+           <td>購入個数</td>
+           <td>
+             <s:property value="session.stock"/>
+               <span>個</span>
+           </td>
+        </tr>
 
-<div id="footer">
-  <div id="pr">
-  </div>
-</div>
+        <tr>
+          <td>支払い方法</td>
+          <td><s:property value="session.pay"/></td>
+        </tr>
 
+        <tr>
+          <td><s:submit value="完了"/></td>
+        </tr>
+     </table>
+    </s:form>
+    </div>
+    </div>
 
+    <div id="footer">
+      <div id="pr">
+      </div>
+    </div>
 </body>
 </html>

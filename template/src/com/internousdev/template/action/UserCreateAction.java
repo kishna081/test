@@ -1,6 +1,8 @@
 package com.internousdev.template.action;
 
-public class UserCreateAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class UserCreateAction extends ActionSupport{
 	public String execute(){
 		return SUCCESS;
 	}
