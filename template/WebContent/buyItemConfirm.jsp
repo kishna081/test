@@ -79,7 +79,7 @@ clear:both;
       <table>
         <tr>
            <td>商品名</td>
-           <td><s:property value="session.buyitem_name"/></td>
+           <td><s:property value="session.buyItem_name"/></td>
         </tr>
 
         <tr>

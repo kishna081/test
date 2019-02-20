@@ -26,8 +26,8 @@ public class MyPageDTO {
 		return this.totalCount;
 	}
 
-	public void setTotalCount(String totalcount){
-		this.totalCount=totalcount;
+	public void setTotalCount(String totalCount){
+		this.totalCount=totalCount;
 	}
 
 	public String getPayment(){

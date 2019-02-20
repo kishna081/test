@@ -63,7 +63,7 @@ clear:both;
 </head>
 <body>
 
-<div id="main">
+<div id="header">
   <div id="pr">
   </div>
 </div>

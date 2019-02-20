@@ -22,7 +22,7 @@
    <th>RESULT</th>
  </tr>
 
- <s:iterator value="helloStutsDTOList">
+ <s:iterator value="helloStrutsDTOList">
  <tr>
    <td><s:property value="userId"/></td>
    <td><s:property value="userName" /></td>

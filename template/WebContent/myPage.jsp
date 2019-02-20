@@ -40,6 +40,12 @@ margin:30px auto;
 border:1px solid #333;
 }
 
+#header{
+width:100%;
+height:80px;
+background-color:black;
+}
+
 #main{
 width:100%:
 height:500px;
@@ -68,7 +74,7 @@ clear:both;
   </div>
 
   <div>
-  <s:if test="session.message==">
+  <s:if test="session.message =="">
   <h3>ご購入情報は以下になります。</h3>
   <table>
     <tr>
