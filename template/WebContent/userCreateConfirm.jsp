@@ -29,7 +29,7 @@ background:#fff;
 
 table{
 text-align:center;
-marin:0 auto;
+margin:0 auto;
 }
 
 /*===ID LAYOUT===*/

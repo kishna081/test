@@ -26,7 +26,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 			myPageDTO = myPageDAO.getMyPageUserInfo(item_transaction_id,user_master_id);
 
 			session.put("buyItem_name",myPageDTO.getItemName());
-			session.put("total_prie",myPageDTO.getTotalPrice());
+			session.put("total_price",myPageDTO.getTotalPrice());
 			session.put("total_count", myPageDTO.getTotalCount());
 			session.put("total_payment",myPageDTO.getPayment());
 			session.put("message", "");

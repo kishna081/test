@@ -36,7 +36,7 @@ margin:0 auto;
 /*===ID LAYOUT===*/
 #top{
 width:780px;
-maring:30px auto;
+margin:30px auto;
 border:1px solid #333;
 }
 

@@ -74,7 +74,7 @@ clear:both;
   </div>
 
   <div>
-  <s:if test="session.message =="">
+  <s:if test='session.message ==""'>
   <h3>ご購入情報は以下になります。</h3>
   <table>
     <tr>
