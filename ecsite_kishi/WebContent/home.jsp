@@ -46,7 +46,7 @@ background-color:black;
 
 #main{
 width:100%;
-height:80px;
+height:500px;
 text-align:center;
 }
 
@@ -70,10 +70,10 @@ text-align:center;
     <div id="pr">
     </div>
   </div>
-  
+
   <div id="main">
     <div id="top">
-    
+
       <p>Home</p>
      </div>
      <div id="text-center">
@@ -84,7 +84,7 @@ text-align:center;
            <p>ログアウトする場合は
            <a href='<s:url action="LogoutAction"/>'>こちら</a></p>
            </s:if>
-           
+
            </div>
      </div>
     <div id="footer">

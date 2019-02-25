@@ -3,7 +3,6 @@
 "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 
-<!--Strutsの詳細設定-->
 <struts>
  <constant name="struts.devMode" value="true"/>
  <package name="com.internousdev.ecsite_kishi.action" extends="struts-default">

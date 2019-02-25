@@ -14,7 +14,7 @@ public class DBConnector {
 	private static String url="jdbc:mysql://localhost/ecsite_kishi2";
 
 	private static String user="root";
-	private static String password="root";
+	private static String password="mysql";
 
 	/*
 	 * コネクションメソッド
