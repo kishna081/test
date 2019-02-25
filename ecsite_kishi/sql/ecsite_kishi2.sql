@@ -1,12 +1,12 @@
 set names utf8;
 set foreign_key_checks =0;
+
+-- DBの作成
 drop database if exists ecsite_kishi2;
-
---DBの作成
 create database if not exists ecsite_kishi2;
-user ecsite_kishi2;
+use ecsite_kishi2;
 
---TABLE login_user_transaction2 の作成
+-- TABLE login_user_transaction2 の作成
 drop table if exists login_user_transaction_2;
 create table login_user_transaction2(
 id int not null primary key auto_increment,
@@ -17,7 +17,7 @@ insert_date datetime,
 updated_date datetime
 );
 
---TABLE item_info_transaction2 の作成
+-- TABLE item_info_transaction2 の作成
 drop table if exists item_info_transaction2;
 create table item_info_transaction2(
 id int not null primary key auto_increment,
@@ -28,9 +28,9 @@ insert_date datetime,
 update_date datetime
 );
 
---TABLE user_buy_item_transaction2 の作成
+-- TABLE user_buy_item_transaction2 の作成
 drop table if exists user_buy_item_transaction2;
-create table if exists user_buy_item_transaction2(
+create table if not exists user_buy_item_transaction2(
 id int not null primary key auto_increment,
 item_transaction_id int,
 total_price int,
@@ -41,7 +41,7 @@ insert_date datetime,
 delete_date datetime
 );
 
---データの追加
+-- データの追加
 INSERT INTO item_info_transaction2(item_name,item_price,item_stock)
 VALUES("ノートBook",100,50);
 

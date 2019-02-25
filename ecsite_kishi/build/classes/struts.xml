@@ -8,10 +8,7 @@
  <constant name="struts.devMode" value="true"/>
  <package name="com.internousdev.ecsite_kishi.action" extends="struts-default">
 
-<!--GoHomeAction-->
-<action name="" class="" method="">
-  <result name=""></result>
-</action>
+
 
 </package>
 </struts>

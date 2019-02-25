@@ -1,16 +1,17 @@
 package com.internousdev.template.util;
 
-import java.sql.Connection;
 import java.sql.DriverManager;
 import  java.sql.SQLException;
+
+import com.mysql.jdbc.Connection;
 
 public class DBConnector {
 
 	private static String driverName="com.mysql.jdbc.Driver";
-	private static String url="jdbc:mysql://localhost/ecsite_kishi";
+	private static String url="jdbc:mysql://localhost/ecsite_kishi2";
 
 	private static String user="root";
-	private static String password="mysql";
+	private static String password="root";
 
 	public Connection getConnection(){
 		Connection con = null;
