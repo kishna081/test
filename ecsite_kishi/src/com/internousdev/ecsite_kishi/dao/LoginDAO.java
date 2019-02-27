@@ -4,11 +4,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import com.internousdev.ecsite_kishi.dto.LoginDTO;
 import com.internousdev.ecsite_kishi.util.DBConnector;
 
 public class LoginDAO {
 
-	private DBConnector dbConnector = new DBConnecor();
+	private DBConnector dbConnector = new DBConnector();
 	private Connection connection = dbConnector.getConnection();
 	private LoginDTO loginDTO = new LoginDTO();
 
@@ -18,10 +19,10 @@ public class LoginDAO {
 		try{
 			PreparedStatement preparedstatement = connection.prepareStatement(sql);
 
-			preparedStatement.setString(1,loginUserId);
-			preparedStatement.setString(2,loginPassword);
+			preparedstatement.setString(1,loginUserId);
+			preparedstatement.setString(2,loginPassword);
 
-			ResultSet resultSet = preparedStatement.executeQuery();
+			ResultSet resultSet = preparedstatement.executeQuery();
 
 			if(resultSet.next()){
 				loginDTO.setLoginId(resultSet.getString("login_id"));

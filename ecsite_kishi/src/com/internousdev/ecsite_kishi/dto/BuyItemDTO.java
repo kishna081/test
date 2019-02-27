@@ -5,6 +5,8 @@ public class BuyItemDTO {
 	public int id;
 	public String itemName;
 	public String itemPrice;
+	
+	
 	public String getItemName(){
 		return itemName;
 	}
