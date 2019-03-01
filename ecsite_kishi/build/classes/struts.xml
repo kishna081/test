@@ -7,6 +7,24 @@
  <constant name="struts.devMode" value="true"/>
  <package name="com.internousdev.ecsite_kishi.action" extends="struts-default">
 
+<!-- HomeAction -->
+<action name="HomeAction" class="com.internousdev.ecsite_kishi.action.HomeAction"  method="execute">
+  <result name="success">buyItem.jsp</result>
+  <result name="login">login.jsp</result>
+</action>
+
+
+<!-- GoHomeAction -->
+<action name="GoHomeAction" class="com.internousdev.ecsite_kishi.action.GoHomeAction" method="execute">
+  <result name="success">home.jsp</result>
+</action>
+
+
+<!-- LoginAction -->
+<action name="LoginAction" class="com.internousdev.ecsite_kishi.action.LoginAction" method="execute">
+  <result name="success">buyItem.jsp</result>
+  <result name="error">login.jsp</result>
+</action>
 
 
 </package>

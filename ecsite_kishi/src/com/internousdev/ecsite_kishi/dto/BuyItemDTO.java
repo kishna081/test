@@ -6,7 +6,7 @@ public class BuyItemDTO {
 	public String itemName;
 	public String itemPrice;
 	
-	
+	//publicなのにgetter/setterが必要？
 	public String getItemName(){
 		return itemName;
 	}
