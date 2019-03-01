@@ -7,7 +7,7 @@ create database if not exists ecsite_kishi2;
 use ecsite_kishi2;
 
 -- TABLE login_user_transaction2 の作成
-drop table if exists login_user_transaction_2;
+drop table if exists login_user_transaction2;
 create table login_user_transaction2(
 id int not null primary key auto_increment,
 login_id varchar(16) unique,
