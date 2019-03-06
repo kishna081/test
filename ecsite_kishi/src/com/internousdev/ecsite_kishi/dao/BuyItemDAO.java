@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import com.internousdev.ecsite_kishi.dto.BuyItemDTO;
-
 import com.internousdev.ecsite_kishi.util.DBConnector;
 
 public class BuyItemDAO {
@@ -14,7 +13,7 @@ public class BuyItemDAO {
 	private BuyItemDTO buyItemDTO = new BuyItemDTO();
 
 	public BuyItemDTO getBuyItemInfo(){
-		String sql="SELECT id,item_name,item_price FROM item_info_transaction2";
+		String sql="SELECT id,item_name,item_price FROM item_info_transaction3";
 
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);

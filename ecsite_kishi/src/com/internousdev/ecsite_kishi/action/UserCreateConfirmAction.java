@@ -50,7 +50,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
 	public void setUserName(String userName) {
 		this.userName=userName;
 	}
-	
+
 	@Override
 	public void setSession(Map<String,Object> session) {
 		this.session=session;
