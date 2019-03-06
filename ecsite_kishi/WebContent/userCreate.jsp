@@ -77,8 +77,8 @@ text-align:center;
   </div>
 
   <div>
-    <s:if test="errorMassage != null">
-      <s:property value="errorMassage" escape="false"/>
+    <s:if test="errorMessage != null">
+      <s:property value="errorMessage" escape="false"/>
       </s:if>
 
       <table>

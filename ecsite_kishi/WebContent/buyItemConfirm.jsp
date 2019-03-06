@@ -63,12 +63,6 @@ display:inline-block;
 text-align:center;
 }
 </style>
-<script type="text/javascript">
-  function submitAction(url){
-	  $('form').attr('action',url);
-	  $('form').submit();
-  }
-</script>
 
 </head>
 <body>
@@ -84,7 +78,7 @@ text-align:center;
   </div>
 
   <div>
-    <s:form>
+    <s:form acion="BuyItemConfirmAction">
       <tr>
         <td>商品名</td>
         <td><s:property value="session.buyItem_name" /></td>
@@ -113,10 +107,9 @@ text-align:center;
        </tr>
 
        <tr>
-        <td><input type="button" value="戻る" onclick="submitAction('BuyItemAction')"/></td>
-        <td><input type="button" value="完了" onclick="submitAction('BuyConfirmAction')"/></td>
-       </tr>
-     </s:form>
+ 
+         <s:submit value="完了"/>
+       </s:form>
 
      <p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
      <p>マイページは<a href='<s:url action="MyPageAction" />'>こちら</a></p>
