@@ -138,6 +138,7 @@ text-align:center;
       </s:form>
 
     <div>
+      <p>★商品の新規登録は<a href='<s:url action="ItemCreateAction"/>'>こちら</a>
       <p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
       <p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
       </div>
