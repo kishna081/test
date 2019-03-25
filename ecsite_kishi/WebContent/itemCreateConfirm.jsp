@@ -98,10 +98,20 @@ text-align:center;
      </td>
 
      <td>
-     <s:property value="itemPrice" escape="false"/>
+     <s:property value="itemPrice" escape="false"/>円
      </td>
     </tr>
 
+
+    <tr>
+     <td>
+     <label>在庫:</label>
+     </td>
+
+     <td>
+     <s:property value="itemStock" escape="false"/>個
+     </td>
+    </tr>
 
     <tr>
      <td>

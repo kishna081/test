@@ -77,6 +77,11 @@
   <result name="error">itemCreate.jsp</result>
 </action>
 
+<!-- ★ItemCreateCompleteAction -->
+<action name="ItemCreateCompleteAction" class="com.internousdev.ecsite_kishi.action.ItemCreateCompleteAction" method="execute">
+  <result name="success">itemCreateComplete.jsp</result>
+  <result name="error">itemCreate.jsp</result>
+</action>
 
 </package>
 </struts>

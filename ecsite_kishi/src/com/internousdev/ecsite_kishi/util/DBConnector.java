@@ -11,7 +11,7 @@ public class DBConnector {
 	 */
 
 	private static String driverName="com.mysql.jdbc.Driver";
-	private static String url="jdbc:mysql://localhost/ecsite_kishi3";
+	private static String url="jdbc:mysql://localhost/ecsite_kishi4";
 
 	private static String user="root";
 	private static String password="mysql";

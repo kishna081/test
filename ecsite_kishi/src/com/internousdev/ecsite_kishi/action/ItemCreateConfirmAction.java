@@ -10,18 +10,21 @@ import com.opensymphony.xwork2.ActionSupport;
 public class ItemCreateConfirmAction extends ActionSupport implements SessionAware{
 
 	private String itemName;
-	private String itemPrice;
+	private int itemPrice;
+	private int itemStock;
 	public Map<String,Object> session;
 	private String errorMassage;
 
 	public String execute(){
 		String result = SUCCESS;
 		if(!(itemName.equals(""))
-		&& (!(itemPrice.equals("")))){
+		&& (!(itemPrice<=0))
+		&& (!(itemStock<=0))){
 			session.put("itemName", itemName);
 			session.put("itemPrice", itemPrice);
+			session.put("itemStock", itemStock);
 	}else{
-		setErrorMassage("未入力の項目があります。");
+		setErrorMassage("入力内容が正しくありません。");
 		result=ERROR;
 	}
 		return result;
@@ -36,12 +39,20 @@ public class ItemCreateConfirmAction extends ActionSupport implements SessionAwa
 		this.itemName=itemName;
 	}
 
-	public String getItemPrice(){
+	public int getItemPrice(){
 		return itemPrice;
 	}
 
-	public void setItemPrice(String itemPrice){
+	public void setItemPrice(int itemPrice){
 		this.itemPrice=itemPrice;
+	}
+
+	public int getItemStock(){
+		return itemStock;
+	}
+
+	public void setItemStock(int itemStock){
+		this.itemStock=itemStock;
 	}
 
 	public String getErrorMassage(){

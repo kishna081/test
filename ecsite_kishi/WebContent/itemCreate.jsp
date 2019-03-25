@@ -99,7 +99,17 @@ text-align:center;
           </td>
 
           <td>
-            <input type="text" name="itemPrice" value="" />
+            <input type="text" name="itemPrice" value="" />円
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label>在庫:</label>
+          </td>
+
+          <td>
+            <input type="text" name="itemStock" value="" />個
           </td>
         </tr>
 
