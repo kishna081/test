@@ -77,13 +77,14 @@ text-align:center;
   </div>
 
   <div>
-    <s:if test="errorMessage != null">
-      <s:property value="errorMessage" escape="false"/>
+    <s:if test="errorMassage != null">
+      <s:property value="errorMassage" escape="false"/>
       </s:if>
 
       <table>
         <s:form action="ItemCreateConfirmAction">
         <tr>
+
           <td>
             <label>商品名:</label>
           </td>

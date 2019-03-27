@@ -11,8 +11,8 @@ import com.opensymphony.xwork2.ActionSupport;
 public class ItemCreateCompleteAction extends ActionSupport implements SessionAware{
 
 	private String itemName;
-	private int itemPrice;
-	private int itemStock;
+	private String itemPrice;
+	private String itemStock;
 	public Map<String,Object> session;
 
 	private ItemCreateCompleteDAO itemCreateCompleteDAO = new ItemCreateCompleteDAO();
@@ -36,19 +36,19 @@ public class ItemCreateCompleteAction extends ActionSupport implements SessionAw
 		this.itemName = itemName;
 	}
 
-	public int getItemPrice(){
+	public String getItemPrice(){
 		return this.itemPrice;
 	}
 
-	public void setItemPrice(int itemPrice){
+	public void setItemPrice(String itemPrice){
 		this.itemPrice=itemPrice;
 	}
 
-	public int getItemStock(){
+	public String getItemStock(){
 		return this.itemStock;
 	}
 
-	public void setItemStock(int itemStock){
+	public void setItemStock(String itemStock){
 		this.itemStock=itemStock;
 	}
 

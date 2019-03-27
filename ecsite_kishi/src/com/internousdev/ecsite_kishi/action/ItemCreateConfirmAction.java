@@ -10,21 +10,22 @@ import com.opensymphony.xwork2.ActionSupport;
 public class ItemCreateConfirmAction extends ActionSupport implements SessionAware{
 
 	private String itemName;
-	private int itemPrice;
-	private int itemStock;
+	private String itemPrice;
+	private String itemStock;
 	public Map<String,Object> session;
 	private String errorMassage;
 
 	public String execute(){
 		String result = SUCCESS;
 		if(!(itemName.equals(""))
-		&& (!(itemPrice<=0))
-		&& (!(itemStock<=0))){
+		&& (itemPrice.matches("[0-9]"))
+		&& (itemStock.matches("[0-9]"))){
 			session.put("itemName", itemName);
 			session.put("itemPrice", itemPrice);
 			session.put("itemStock", itemStock);
 	}else{
-		setErrorMassage("入力内容が正しくありません。");
+		setErrorMassage("入力内容が正しくありません。"
+				+ "在庫・値段は半角英数字のみ登録が可能です。");
 		result=ERROR;
 	}
 		return result;
@@ -39,19 +40,19 @@ public class ItemCreateConfirmAction extends ActionSupport implements SessionAwa
 		this.itemName=itemName;
 	}
 
-	public int getItemPrice(){
+	public String getItemPrice(){
 		return itemPrice;
 	}
 
-	public void setItemPrice(int itemPrice){
+	public void setItemPrice(String itemPrice){
 		this.itemPrice=itemPrice;
 	}
 
-	public int getItemStock(){
+	public String getItemStock(){
 		return itemStock;
 	}
 
-	public void setItemStock(int itemStock){
+	public void setItemStock(String itemStock){
 		this.itemStock=itemStock;
 	}
 
