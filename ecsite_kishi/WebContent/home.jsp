@@ -83,6 +83,9 @@ text-align:center;
          <s:if test="#session.id!=null">
            <p>ログアウトする場合は
            <a href='<s:url action="LogoutAction"/>'>こちら</a></p>
+
+           <p>管理者画面は
+           <a href='<s:url action="AdminAction"/>'>こちら</a></p>
            </s:if>
 
            </div>

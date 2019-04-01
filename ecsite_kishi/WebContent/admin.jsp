@@ -60,21 +60,21 @@ text-align:center;
 
 #product{
 display:inline-block;
-width:40%;
-height:250px;
+width:25%;
+height:200px;
 border:1px solid black;
-margin:auto;
-padding:auto;
+margin:0 auto;
+padding:0 auto;
 }
 
 
 #user{
 display:inline-block;
-width:40%;
-height:250px;
+width:25%;
+height:200px;
 border:1px solid black;
-margin:auto;
-padding:auto;
+margin:0 auto;
+padding:0 auto;
 }
 
 #midashi{
@@ -108,16 +108,15 @@ text-align:center;
     </div>
 
 
-<div id="box">
   <div id="product">
   <div id="midashi">商品</div>
 
   <s:form action="LoginAction">
-  <s:submit value="新規登録"/>
+    <s:submit value="新規登録"/>
   </s:form>
-  <br>
-  一覧
-  <br>
+  <s:form action="ItemListAction">
+    <s:submit value="アイテム一覧"/>
+  </s:form>
   </div>
 
   <div id="user">
@@ -125,16 +124,14 @@ text-align:center;
   <s:form action="UserCreateAction">
   <s:submit value="新規登録"/>
   </s:form>
-  <br>
   一覧
-  <br>
   </div>
-</div>
+
     <div>
       <p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
       <p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
       </div>
-</div>
+        </div>
 
 <div id="footer">
   <div id="pr">

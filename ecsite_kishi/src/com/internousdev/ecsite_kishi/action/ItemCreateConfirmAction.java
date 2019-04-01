@@ -18,8 +18,8 @@ public class ItemCreateConfirmAction extends ActionSupport implements SessionAwa
 	public String execute(){
 		String result = SUCCESS;
 		if(!(itemName.equals(""))
-		&& (itemPrice.matches("[0-9]"))
-		&& (itemStock.matches("[0-9]"))){
+		&& (itemPrice.matches("[0-9]+"))
+		&& (itemStock.matches("[0-9]+"))){
 			session.put("itemName", itemName);
 			session.put("itemPrice", itemPrice);
 			session.put("itemStock", itemStock);
