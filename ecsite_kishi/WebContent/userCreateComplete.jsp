@@ -81,7 +81,9 @@ text-align:center;
   <h3>ユーザーの登録が完了しました。</h3>
 
   <div>
-    <a href='<s:url action="HomeAction"/>'>ログインへ</a>
+   <p><a href='<s:url action="AdminAction"/>'>管理者ページトップへ</a></p>
+   <p><a href='<s:url action="UserListAction"/>'>登録ユーザー一覧へ</a>
+   <p><a href='<s:url action="GoHomeAction"/>'>Homeへ戻る</a></p>
   </div>
  </div>
 </div>

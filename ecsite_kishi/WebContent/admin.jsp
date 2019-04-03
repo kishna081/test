@@ -126,7 +126,9 @@ text-align:center;
   <s:form action="UserCreateAction">
   <s:submit value="新規登録"/>
   </s:form>
-  一覧
+  <s:form action="UserListAction">
+    <s:submit value="ユーザー一覧"/>
+  </s:form>
   </div>
 
     <div>

@@ -13,17 +13,18 @@ import com.opensymphony.xwork2.ActionSupport;
 public class ItemListAction extends ActionSupport implements SessionAware{
 
 	public Map<String,Object> session;
+	//DTOからとってきた情報を格納する入れ物。jspはこのリストを参照する
 	private ArrayList<IteminfoDTO> ItemList = new ArrayList<IteminfoDTO>();
 	ItemListDAO dao = new ItemListDAO();
 
 	public String execute()throws SQLException{
-		ItemList = dao.getItemCreateInfo();
-		
+		ItemList = dao.getItemInfo();
+
 		//ログインしてるか確認。未ログインの場合はlogin.jspに戻す
 		if(!session.containsKey("id")){
 			return ERROR;
 		}
-		
+
 		else{
 		session.put("ItemList", ItemList);
 		String result = SUCCESS;

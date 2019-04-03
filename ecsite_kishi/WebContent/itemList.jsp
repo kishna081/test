@@ -77,7 +77,7 @@ text-align:center;
   </div>
 
   <div>
-  <s:if test="itemList==null">
+  <s:if test="ItemList==null">
    <h3>作成したアイテムはありません。</h3>
   </s:if>
 
@@ -91,12 +91,12 @@ text-align:center;
        <th>作成日</th>
      </tr>
 
-     <s:iterator value="itemList">
+     <s:iterator value="ItemList">
      <tr>
-       <td><s:property value="itemName"/></td>
-       <td><s:property value="itemPrice"/></td>
-       <td><s:property value="itemStock"/></td>
-       <td><s:property value="insert_date"/></td>
+       <td><s:property value="ItemName"/></td>
+       <td><s:property value="ItemPrice"/></td>
+       <td><s:property value="ItemStock"/></td>
+       <td><s:property value="Insert_date"/></td>
      </tr>
    </s:iterator>
   </table>

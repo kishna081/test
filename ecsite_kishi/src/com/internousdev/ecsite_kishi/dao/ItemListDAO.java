@@ -14,7 +14,7 @@ public class ItemListDAO{
 	DBConnector dbConnector = new DBConnector();
 	Connection connection = dbConnector.getConnection();
 
-	public ArrayList<IteminfoDTO> getItemCreateInfo()throws SQLException{
+	public ArrayList<IteminfoDTO> getItemInfo()throws SQLException{
 		ArrayList<IteminfoDTO> iteminfoDTO = new ArrayList<IteminfoDTO>();
 
 		String sql="SELECT * FROM item_info_transaction4";
@@ -22,6 +22,7 @@ public class ItemListDAO{
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet resultSet = preparedStatement.executeQuery();
+//ResultSet resultSet = preparedStatement.executeQuery()　の詳細調べておく
 
 			while(resultSet.next()){
 				IteminfoDTO dto = new IteminfoDTO();
