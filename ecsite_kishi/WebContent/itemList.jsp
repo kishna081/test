@@ -104,10 +104,6 @@ text-align:center;
 
   </s:elseif>
 
-  <s:if test="message!= null">
-    <h3><s:property value="message"/></h3>
-  </s:if>
-
   <div id="text-right">
   <p>商品の新規登録は<a href='<s:url action="ItemCreateAction"/>'>こちら</a></p>
     <p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>

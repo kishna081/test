@@ -77,11 +77,11 @@ text-align:center;
   </div>
 
   <div>
-  <s:if test="myPageList==null">
-   <h3>ご購入情報はありません。</h3>
-  </s:if>
+			<s:if test="myPageList==null">
+				<h3>ご購入情報はありません。</h3>
+			</s:if>
 
-  <s:elseif test="message == null">
+			<s:elseif test="message == null">
     <h3>ご購入情報は以下になります。</h3>
     <table border="1">
     <tr>

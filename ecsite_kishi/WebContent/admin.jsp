@@ -60,6 +60,7 @@ text-align:center;
 
 #product{
 display:inline-block;
+vertical-align:top;
 width:25%;
 height:200px;
 border:1px solid black;
@@ -70,6 +71,7 @@ padding:0 auto;
 
 #user{
 display:inline-block;
+vertical-align:top;
 width:25%;
 height:200px;
 border:1px solid black;
@@ -111,7 +113,7 @@ text-align:center;
   <div id="product">
   <div id="midashi">商品</div>
 
-  <s:form action="LoginAction">
+  <s:form action="ItemCreateAction">
     <s:submit value="新規登録"/>
   </s:form>
   <s:form action="ItemListAction">

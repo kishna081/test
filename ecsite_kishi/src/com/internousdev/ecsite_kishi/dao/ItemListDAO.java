@@ -11,18 +11,16 @@ import com.internousdev.ecsite_kishi.util.DBConnector;
 
 public class ItemListDAO{
 
-	private DBConnector dbConnector = new DBConnector();
-	private Connection connection = dbConnector.getConnection();
+	DBConnector dbConnector = new DBConnector();
+	Connection connection = dbConnector.getConnection();
 
-	public ArrayList<IteminfoDTO> getItemCreateInfo(String id)throws SQLException{
+	public ArrayList<IteminfoDTO> getItemCreateInfo()throws SQLException{
 		ArrayList<IteminfoDTO> iteminfoDTO = new ArrayList<IteminfoDTO>();
 
-		String sql="SELECT id,item_name,item_price,item_stock,insert_date FROM item_info_transaction4";
+		String sql="SELECT * FROM item_info_transaction4";
 
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setString(1, id);
-
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			while(resultSet.next()){

@@ -21,25 +21,33 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	private BuyItemDAO buyItemDAO = new BuyItemDAO();
 
 	public String execute(){
-		String result = ERROR;
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId,loginPassword);
 		session.put("loginUser",loginDTO);
-
+//登録されているユーザーの場合（問題なくログインできる）
 		if(((LoginDTO) session.get("loginUser")).getLoginFlg()){
-			result = SUCCESS;
+			String result = SUCCESS;
 			BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
 
 			session.put("login_user_id",loginDTO.getLoginId());
 			session.put("id",buyItemDTO.getId());
 			session.put("buyItem_name",buyItemDTO.getItemName());
 			session.put("buyItem_price",buyItemDTO.getItemPrice());
-
+			
+//SUCCESSを戻す。BuyItem画面へ
 			return result;
-
+			
+//管理者だけがログインできるid/passwordだったときは管理者ページへ遷移
+//		}else if() {
+//			String result = "admin";
+//			
+//			return result;
+//			
+//未登録ユーザーだったときはエラーのログイン画面を戻す
+		}else {
+		return ERROR;
 		}
-		return result;
 	}
-
+	
 	public String getLogniUserId(){
 		return loginUserId;
 	}

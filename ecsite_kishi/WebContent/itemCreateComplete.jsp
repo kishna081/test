@@ -80,7 +80,7 @@ text-align:center;
   <h3>アイテムの登録が完了しました。</h3>
 
   <div>
-   <p><a href='<s:url action="HomeAction"/>'>商品購入へ</a></p>
+   <p><a href='<s:url action="AdminAction"/>'>管理者ページトップへ</a></p>
    <p><a href='<s:url action="ItemListAction"/>'>登録アイテム一覧へ</a>
    <p><a href='<s:url action="GoHomeAction"/>'>Homeへ戻る</a></p>
           </div>

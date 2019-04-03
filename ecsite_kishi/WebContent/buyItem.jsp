@@ -84,7 +84,8 @@ text-align:center;
             </td>
 
             <td>
-              <s:property value="session.buyItem_name" />
+            <select name="select"></select>
+          <s:property value="session.buyItem_name" />
               <br>
              </td>
 
